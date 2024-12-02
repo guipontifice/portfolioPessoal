@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Mango Grotesque';
+    src: url('MangoGrotesque-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque Black Ita';
+    src: url('MangoGrotesque-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque';
+    src: url('MangoGrotesque-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque Ita';
+    src: url('MangoGrotesque-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque ExtBd Ita';
+    src: url('MangoGrotesque-ExtBdIta.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque Light Ita';
+    src: url('MangoGrotesque-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque ExtBd';
+    src: url('MangoGrotesque-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque Ita';
+    src: url('MangoGrotesque-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque ExtLt';
+    src: url('MangoGrotesque-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque ExtLt Ita';
+    src: url('MangoGrotesque-ExtLtIta.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque';
+    src: url('MangoGrotesque-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque SemBd Ita';
+    src: url('MangoGrotesque-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque Thin Ita';
+    src: url('MangoGrotesque-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque';
+    src: url('MangoGrotesque-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque SemBd';
+    src: url('MangoGrotesque-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque Med Ita';
+    src: url('MangoGrotesque-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque Med';
+    src: url('MangoGrotesque-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mango Grotesque';
+    src: url('MangoGrotesque-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

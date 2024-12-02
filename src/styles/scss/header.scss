@@ -1,0 +1,67 @@
+header {
+  display: flex;
+  font-family: "Mango Grotesque ExtLt", sans-serif;
+  position: fixed;
+  width: 100%;
+  font-weight: 200;
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 0 7.5%;
+    // background-color: #fb4566;
+    background-color: #0e090d;
+    #nome {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 30px;
+      color: #f1dada;
+    }
+    p {
+      text-decoration: none;
+      color: #f1dada;
+    }
+    .nav {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      font-family: "Mango Grotesque", sans-serif;
+      p {
+        color: #f1dada;
+        line-height: 1.5em;
+        a {
+
+          position: relative;
+          text-decoration: none;
+          font-size: 18px;
+          color: #f1dada;
+          margin: 0 10px;
+          padding: 10px 5px;
+          font-size: 24px;
+          font-weight: 400;
+          &:hover {
+            transform: translate(0%, -200%) translate3d(0px, 0px, 0px);
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: -2rem;
+            left: 50%;
+            display: block;
+            width: 0.25rem;
+            height: 0.25rem;
+            border-radius: 50%;
+            background: #fb4566;
+            transform: translate(-50%, -50%) scale(0);
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+}

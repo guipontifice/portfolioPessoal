@@ -1,0 +1,109 @@
+.footer {
+  .caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid rgba(241, 218, 218, 0.1);
+    border-radius: 35px;
+    width: 75%;
+    margin: 0 auto;
+    padding: 3% 5%;
+    .titulo {
+      font-family: "Mango Grotesque", sans-serif;
+      margin: 2% 0 10px;
+      font-size: 22px;
+    }
+    .texto {
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 32px;
+        transition: 0.3s all ease-in-out;
+        &:hover {
+          color: #fb4566;
+        }
+      }
+      .links {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        .botao {
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          .circle {
+            position: relative;
+            width: 12px;
+            height: 12px;
+            background-color: #fb4566;
+            border-radius: 50%;
+            margin-right: 20px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            overflow: hidden;
+            padding: 2px;
+            ::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 10px;
+              height: 10px;
+              background: url("../../assets/images/seta.svg") no-repeat center;
+              background-size: contain;
+              transform: translate(-50%, -50%) rotate(45deg);
+              transition: transform 0.3s ease-in-out, width 0.3s ease-in-out,
+                height 0.3s ease-in-out;
+            }
+            &:hover {
+              transform: scale(2) rotate(-45deg);
+              background: url("../../assets/images/seta.svg") no-repeat center;
+              background-size: contain;
+              background-color: #fb4566;
+              &::after {
+                width: 6px;
+                height: 6px;
+              }
+            }
+          }
+          a {
+            text-decoration: none;
+            color: #f1dada;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.2s ease-in-out;
+            height: auto;
+            padding: 1px 0;
+
+            &:hover {
+              -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+              color: transparent;
+              // color: #fb4566;
+              overflow: visible;
+              &::before {
+                top: 0;
+                transform: translateY(110%);
+              }
+            }
+            &::before {
+              content: attr(data-hover);
+              position: absolute;
+              top: 100%;
+              // -webkit-transform: translate3d(0, 0, 0);
+              transform: translateY(0);
+              // transform: translate3d(0, 0, 0);
+              color: #fb4566;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

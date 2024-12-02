@@ -1,0 +1,212 @@
+html {
+  background-color: #0e090d;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #000;
+}
+
+.home {
+  .first {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 10px 7%;
+    height: 50vh;
+    .left {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+    .center {
+      border: 1px solid #000;
+      width: 550px;
+      margin: 0 20px;
+    }
+    .right {
+      line-break: auto;
+    }
+    h1 {
+      font-family: "Mango Grotesque", sans-serif;
+      font-weight: 500;
+      font-size: 55px;
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      padding: 5px 0;
+      margin: 0;
+      text-align: right;
+    }
+  }
+  .second {
+    margin-top: 10%;
+    padding: 10px 10%;
+    height: 80vh;
+    .texto {
+      font-size: 32px;
+      line-height: 1.5em;
+      color: #f1dada;
+      p {
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+    .botao {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .circle {
+        position: relative;
+        width: 12px;
+        height: 12px;
+        background-color: #fb4566;
+        border-radius: 50%;
+        margin-right: 20px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+        padding: 2px;
+        ::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 10px;
+          height: 10px;
+          background: url("../../assets/images/seta.svg") no-repeat center;
+          background-size: contain;
+          transform: translate(-50%, -50%) rotate(45deg);
+          transition: transform 0.3s ease-in-out, width 0.3s ease-in-out,
+            height 0.3s ease-in-out;
+        }
+        &:hover {
+          transform: scale(2) rotate(-45deg);
+          background: url("../../assets/images/seta.svg") no-repeat center;
+          background-size: contain;
+          background-color: #fb4566;
+          &::after {
+            width: 6px;
+            height: 6px;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #f1dada;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+        height: auto;
+        padding: 1px 0;
+
+        &:hover {
+          -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+          color: transparent;
+          // color: #fb4566;
+          overflow: visible;
+          &::before {
+            top: 0;
+            transform: translateY(110%);
+          }
+        }
+        &::before {
+          content: "Saiba Mais!";
+          position: absolute;
+          top: 100%;
+          // -webkit-transform: translate3d(0, 0, 0);
+          transform: translateY(0);
+          // transform: translate3d(0, 0, 0);
+          color: #fb4566;
+          display: block;
+        }
+      }
+    }
+  }
+  .third {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0 8%;
+    .divisoria {
+      border-bottom: 1px solid #f1dada1a;
+      max-width: 350px;
+      width: 100%;
+    }
+    .texto {
+      text-align: center;
+      width: 400px;
+      h2 {
+        font-family: "Mango Grotesque", sans-serif;
+        font-size: 45px;
+        font-weight: 400;
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+  .fourth {
+    .section {
+      position: relative;
+      height: 300vh;
+      .motion {
+        position: sticky;
+        top: 0;
+        display: flex;
+        height: screen;
+        align-items: center;
+        overflow: hidden;
+        .motion-div {
+          display: flex;
+          gap: 4px;
+        }
+      }
+    }
+    .cards {
+      position: relative;
+      height: 250px;
+      width: 450px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      .card {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        transition: transform 0.3s ease-in-out;
+      }
+      .box {
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        display: grid;
+        place-content: center;
+        p {
+          font-size: 50px;
+          font-family: 'Lora', serif;
+        }
+      }
+      .circulo {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background-color: #fb4566;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+        padding: 2px;
+      }
+    }
+  }
+}
