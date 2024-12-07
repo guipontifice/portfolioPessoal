@@ -27,8 +27,8 @@ function Footer() {
         </div>
       </div>
       <div className="bottomRowFooter">
-        <p>2024 Guilherme Pontifice</p>
-        <p>Disponível</p>
+        <p>&#169; 2024 Guilherme Pontifice</p>
+        <p id="disponivel">Disponível para uma posição remota</p>
         <p>Feito por Guilherme Pontifice</p>
       </div>
     </div>

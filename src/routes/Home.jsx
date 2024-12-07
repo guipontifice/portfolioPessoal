@@ -11,7 +11,7 @@ function Home() {
         <div className="left">
           <h1>Guilherme Pontifice</h1>
           <p>Guarulhos, São Paulo</p>
-          <p>Open to Work</p>
+          <p id="disponivel">Open to Work</p>
         </div>
         <div className="center"></div>
         <div className="right">
