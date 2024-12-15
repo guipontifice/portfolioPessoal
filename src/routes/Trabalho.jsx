@@ -35,6 +35,21 @@ function Trabalho() {
           </p>
           <div className="techs"></div>
         </div>
+        <div className="card">
+          <h1>Auxiliar de Pricing</h1>
+          <h2>LSG Sky Chefs</h2>
+          <h3>Jul/22 - Ago/23</h3>
+          <p>
+            Como Auxiliar de Pricing, a minha responsabilidade era criar preços
+            de acordo com a estratégia tomada em conjunto com os gestores do
+            time de Preços e Custos. Também conduzir análises de preços,
+            principalmente KPI's, onde o foco era descobrir os motivos das
+            disparidades de preços e aberturas que poderíamos tomar vantagens.
+            Nessas atribuições, eram muito usados PowerBI e Excel, além de
+            outras ferramentas de análise de dados.
+          </p>
+          <div className="techs"></div>
+        </div>
       </div>
     </div>
   );
