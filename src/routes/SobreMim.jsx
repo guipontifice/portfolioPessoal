@@ -11,12 +11,19 @@ function SobreMim() {
         <div className="texto">
           <h1>Olá</h1>
           <p>
-            Olá, me chamo Guilherme, sou um Desenvolvedor Front-end há 1 ano.
-            Utilizo marjoritariamente TypeScript, JavaScript, PHP e React.
-            Contribuí em projetos de diversos tamanhos, fortalecendo não apenas
-            meu conhecimento, mas também compartilhando aprendizados com a
-            equipe. Sou comprometido, focado e inovador, buscando constantemente
-            aprimorar minhas habilidades através de cursos e bootcamps online.
+            Olá, me chamo Guilherme, sou um Desenvolvedor Front-end com mais de
+            1 ano de experiência na criação e otimização de interfaces web
+            responsivas, acessíveis e de alta performance. Possuo sólida
+            experiência com Vue, React, Angular, JavaScript, TypeScript, PHP e
+            Node.js, atuando com foco em usabilidade, SEO, boas práticas de
+            código e melhoria contínua.
+          </p>
+          <p>
+            Sou comprometido com a entrega de soluções escaláveis e eficientes,
+            participando ativamente do desenvolvimento, refatoração e manutenção
+            de projetos diversos no setor de marketing digital. Tenho facilidade
+            para colaborar com equipes multidisciplinares, aplicando
+            metodologias ágeis e versionamento com Git.
           </p>
         </div>
         <div className="botao">
