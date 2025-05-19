@@ -1,0 +1,68 @@
+header {
+  display: flex;
+  font-family: "Mango Grotesque ExtLt", sans-serif;
+  position: fixed;
+  width: 90%;
+  font-weight: 200;
+  z-index: 100;
+  box-shadow: 1px 4px 6px 2px black;
+  margin: 0 auto;
+}
+header .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 0 7.5%;
+  background-color: #0e090d;
+}
+header .menu #nome {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  color: #f1dada;
+}
+header .menu p {
+  text-decoration: none;
+  color: #f1dada;
+}
+header .menu .nav {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  font-family: "Mango Grotesque", sans-serif;
+}
+header .menu .nav p {
+  color: #f1dada;
+  line-height: 1.5em;
+}
+header .menu .nav p a {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  color: #f1dada;
+  margin: 0 10px;
+  padding: 10px 5px;
+  font-size: 24px;
+  font-weight: 400;
+}
+header .menu .nav p a:hover {
+  transform: translate(0%, -200%) translate3d(0px, 0px, 0px);
+}
+header .menu .nav p a:after {
+  content: "";
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  display: block;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background: #fb4566;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}

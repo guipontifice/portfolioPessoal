@@ -11,7 +11,7 @@ function App() {
     <>
       <div className="App">
         <Header />
-        <h1>React Router</h1>
+        {/* <h1>React Router</h1> */}
         <Outlet />
         <Footer />
       </div>

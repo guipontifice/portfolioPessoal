@@ -2,8 +2,11 @@ header {
   display: flex;
   font-family: "Mango Grotesque ExtLt", sans-serif;
   position: fixed;
-  width: 100%;
+  width: 90%;
   font-weight: 200;
+  z-index: 100;
+  box-shadow: 1px 4px 6px 2px black;
+  margin: 0 auto;
   .menu {
     display: flex;
     flex-direction: row;
@@ -34,7 +37,6 @@ header {
         color: #f1dada;
         line-height: 1.5em;
         a {
-
           position: relative;
           text-decoration: none;
           font-size: 18px;
