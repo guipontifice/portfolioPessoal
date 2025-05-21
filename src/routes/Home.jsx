@@ -3,7 +3,8 @@ import "../styles/fonts.css";
 import "../styles/scss/styles.scss";
 import "../styles/scss/footer.scss";
 import { Link } from "react-router-dom";
-import Carrossel from '../components/Carrossel'
+import Carrossel from "../components/Carrossel";
+import ScrollTriggerC from "../components/animations/ScrollTrigger";
 function Home() {
   return (
     <div className="home">
@@ -43,6 +44,7 @@ function Home() {
         </div>
         <div className="divisoria"></div>
       </div>
+      <ScrollTriggerC />
       <div className="fourth">
         <Carrossel />
       </div>
