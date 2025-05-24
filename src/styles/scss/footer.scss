@@ -10,114 +10,136 @@
     width: 75%;
     margin: 0 auto;
     padding: 3% 5%;
+
     .titulo {
       font-family: "Mango Grotesque", sans-serif;
       margin: 2% 0 10px;
       font-size: 22px;
     }
+
     .texto {
       a {
         color: white;
         text-decoration: none;
         font-size: 32px;
         transition: 0.3s all ease-in-out;
+
         &:hover {
           color: #fb4566;
         }
       }
+
       .links {
         margin-top: 20px;
         display: flex;
         justify-content: space-around;
+
         .botao {
           display: flex;
-          flex-direction: row;
-          align-content: center;
-          justify-content: center;
           align-items: center;
-          text-align: center;
-          .circle {
+          justify-content: center;
+
+          .animated-link {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
             position: relative;
-            width: 12px;
-            height: 12px;
-            background-color: #fb4566;
-            border-radius: 50%;
-            margin-right: 20px;
-            transition: all 0.3s ease-in-out;
-            cursor: pointer;
-            overflow: hidden;
-            padding: 2px;
-            ::after {
-              content: "";
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              width: 10px;
-              height: 10px;
-              background: url("../../assets/images/seta.svg") no-repeat center;
-              background-size: contain;
-              transform: translate(-50%, -50%) rotate(45deg);
-              transition: transform 0.3s ease-in-out, width 0.3s ease-in-out,
-                height 0.3s ease-in-out;
-            }
-            &:hover {
-              transform: scale(2) rotate(-45deg);
-              background: url("../../assets/images/seta.svg") no-repeat center;
-              background-size: contain;
+
+            .circle {
+              width: 12px;
+              height: 12px;
               background-color: #fb4566;
+              border-radius: 50%;
+              position: relative;
+              transition: all 0.3s ease-in-out;
+              flex-shrink: 0;
+
               &::after {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 5px;
                 width: 6px;
                 height: 6px;
+                background: url("../../assets/images/seta.svg") no-repeat center;
+                background-size: contain;
+                transform: translate(-50%, -50%) rotate(45deg);
+                opacity: 0;
+                transition: all 0.3s ease;
               }
             }
-          }
-          a {
-            text-decoration: none;
-            color: #f1dada;
-            overflow: hidden;
-            position: relative;
-            transition: all 0.2s ease-in-out;
-            height: auto;
-            padding: 1px 0;
+
+            .text-wrapper {
+              position: relative;
+              height: 24px;
+              overflow: hidden;
+            }
+
+            .text {
+              font-family: 'Poppins', sans-serif;
+              font-size: 18px;
+              line-height: 24px;
+              transition: transform 0.4s ease, opacity 0.4s ease;
+              display: block;
+            }
+
+            .text-top {
+              color: #f1dada;
+              transform: translateY(0);
+              position: relative;
+              z-index: 1;
+            }
+
+            .text-bottom {
+              color: #fb4566;
+              position: absolute;
+              top: 100%; // Fora da view
+              left: 0;
+              transform: translateY(0);
+              opacity: 0;
+            }
 
             &:hover {
-              -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
-              color: transparent;
-              // color: #fb4566;
-              overflow: visible;
-              &::before {
-                top: 0;
-                transform: translateY(110%);
+              .circle {
+                transform: scale(2) rotate(-100deg);
+
+                &::after {
+                  opacity: 1;
+                }
               }
-            }
-            &::before {
-              content: attr(data-hover);
-              position: absolute;
-              top: 100%;
-              // -webkit-transform: translate3d(0, 0, 0);
-              transform: translateY(0);
-              // transform: translate3d(0, 0, 0);
-              color: #fb4566;
-              display: block;
+
+              .text-top {
+                transform: translateY(-100%);
+                opacity: 0;
+              }
+
+              .text-bottom {
+                transform: translateY(-100%);
+                opacity: 1;
+              }
             }
           }
         }
       }
     }
   }
+
   .bottomRowFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 75%;
     margin: 0 auto;
+
     p {
       color: #f1dada;
       opacity: 0.6;
       font-size: 12px;
+
       &#disponivel {
         font-style: italic;
+
         &::before {
           content: "";
           display: inline-block;
@@ -133,12 +155,14 @@
         }
       }
     }
+
     @keyframes pulse-animation {
       0% {
         transform: scale(1);
         opacity: 1;
         box-shadow: 0 0 0 0.5rem #98fe7f00;
       }
+
       100% {
         transform: scale(1.5);
         opacity: 0.5;

@@ -11,24 +11,31 @@ function Footer() {
         <div className="texto">
           <a href="">guilhermepontifice.gp@gmail.com</a>
           <div className="links">
-          <div className="botao">
-          <div className="circle"></div>
-          <Link to="/sobre" data-hover="Linkedin">
-            Linkedin
-          </Link>
-        </div>
-        <div className="botao">
-          <div className="circle"></div>
-          <Link to="/sobre" data-hover="Download CV">
-            Download CV
-          </Link>
-        </div>
+            <div className="botao">
+              <Link to="/sobre" className="animated-link">
+                <div className="circle"></div>
+                <div className="text-wrapper">
+                  <span className="text text-top">Linkedin</span>
+                  <span className="text text-bottom">Linkedin</span>
+                </div>
+              </Link>
+            </div>
+
+            <div className="botao">
+              <Link to="/sobre" className="animated-link">
+                <div className="circle"></div>
+                <div className="text-wrapper">
+                  <span className="text text-top">Download CV</span>
+                  <span className="text text-bottom">Download CV</span>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
       <div className="bottomRowFooter">
         <p>&#169; 2024 Guilherme Pontifice</p>
-        <p id="disponivel">Disponível para uma posição remota</p>
+        <p id="disponivel">Em busca de uma nova oportunidade</p>
         <p>Feito por Guilherme Pontifice</p>
       </div>
     </div>

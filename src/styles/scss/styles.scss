@@ -4,18 +4,111 @@ html {
   font-family: "Poppins", sans-serif;
   border: 1px solid #000;
 }
+
+* {
+  .botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .animated-link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+      position: relative;
+
+      .circle {
+        width: 12px;
+        height: 12px;
+        background-color: #fb4566;
+        border-radius: 50%;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        flex-shrink: 0;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 10px;
+          height: 10px;
+          background: url("../../assets/images/seta.svg") no-repeat center;
+          background-size: contain;
+          transform: translate(-50%, -50%) rotate(45deg);
+          opacity: 0;
+          transition: all 0.3s ease;
+        }
+      }
+
+      .text-wrapper {
+        position: relative;
+        height: 24px;
+        overflow: hidden;
+      }
+
+      .text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        display: block;
+      }
+
+      .text-top {
+        color: #f1dada;
+        transform: translateY(0);
+        position: relative;
+        z-index: 1;
+      }
+
+      .text-bottom {
+        color: #fb4566;
+        position: absolute;
+        top: 100%; // Fora da view
+        left: 0;
+        transform: translateY(0);
+        opacity: 0;
+      }
+
+      &:hover {
+        .circle {
+          transform: scale(2) rotate(-45deg);
+
+          &::after {
+            opacity: 1;
+          }
+        }
+
+        .text-top {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+
+        .text-bottom {
+          transform: translateY(-100%);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
 @keyframes pulse-animation {
   0% {
     transform: scale(1);
     opacity: 1;
     box-shadow: 0 0 0 0.5rem #98fe7f00;
   }
+
   100% {
     transform: scale(1.5);
     opacity: 0.5;
     box-shadow: 0 0 #98fe7f80;
   }
 }
+
 .home {
   .first {
     display: flex;
@@ -24,13 +117,16 @@ html {
     margin-top: 10%;
     padding: 10px 7%;
     height: 50vh;
+
     .left {
       display: flex;
       flex-direction: column;
       line-height: 1;
+
       p {
         &#disponivel {
           font-style: italic;
+
           &::before {
             content: "";
             display: inline-block;
@@ -53,14 +149,17 @@ html {
       width: 550px;
       margin: 0 20px;
     }
+
     .right {
       line-break: auto;
     }
+
     h1 {
       font-family: "Mango Grotesque", sans-serif;
       font-weight: 500;
       font-size: 55px;
     }
+
     p {
       font-family: "Poppins", sans-serif;
       font-size: 14px;
@@ -69,95 +168,114 @@ html {
       text-align: right;
     }
   }
+
   .second {
     margin-top: 10%;
     padding: 10px 10%;
-    height: 80vh;
+    height: 120vh;
+
     .texto {
-      font-size: 32px;
+      font-size: 28px;
       line-height: 1.5em;
       color: #f1dada;
+      text-align: justify;
+
       p {
         span {
           font-weight: 700;
         }
       }
     }
+
     .botao {
       display: flex;
-      flex-direction: row;
-      align-content: center;
-      justify-content: center;
       align-items: center;
-      text-align: center;
-      .circle {
+      justify-content: center;
+
+      .animated-link {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        text-decoration: none;
         position: relative;
-        width: 12px;
-        height: 12px;
-        background-color: #fb4566;
-        border-radius: 50%;
-        margin-right: 20px;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-        overflow: hidden;
-        padding: 2px;
-        ::after {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 10px;
-          height: 10px;
-          background: url("../../assets/images/seta.svg") no-repeat center;
-          background-size: contain;
-          transform: translate(-50%, -50%) rotate(45deg);
-          transition: transform 0.3s ease-in-out, width 0.3s ease-in-out,
-            height 0.3s ease-in-out;
-        }
-        &:hover {
-          transform: scale(2) rotate(-45deg);
-          background: url("../../assets/images/seta.svg") no-repeat center;
-          background-size: contain;
+
+        .circle {
+          width: 12px;
+          height: 12px;
           background-color: #fb4566;
+          border-radius: 50%;
+          position: relative;
+          transition: all 0.3s ease-in-out;
+          flex-shrink: 0;
+
           &::after {
-            width: 6px;
-            height: 6px;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background: url("../../assets/images/seta.svg") no-repeat center;
+            background-size: contain;
+            transform: translate(-50%, -50%) rotate(45deg);
+            opacity: 0;
+            transition: all 0.3s ease;
           }
         }
-      }
-      a {
-        text-decoration: none;
-        color: #f1dada;
-        overflow: hidden;
-        position: relative;
-        transition: all 0.2s ease-in-out;
-        height: auto;
-        padding: 1px 0;
+
+        .text-wrapper {
+          position: relative;
+          height: 24px;
+          overflow: hidden;
+        }
+
+        .text {
+          font-family: 'Poppins', sans-serif;
+          font-size: 18px;
+          line-height: 24px;
+          transition: transform 0.4s ease, opacity 0.4s ease;
+          display: block;
+        }
+
+        .text-top {
+          color: #f1dada;
+          transform: translateY(0);
+          position: relative;
+          z-index: 1;
+        }
+
+        .text-bottom {
+          color: #fb4566;
+          position: absolute;
+          top: 100%; // Fora da view
+          left: 0;
+          transform: translateY(0);
+          opacity: 0;
+        }
 
         &:hover {
-          -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-          color: transparent;
-          // color: #fb4566;
-          overflow: visible;
-          &::before {
-            top: 0;
-            transform: translateY(110%);
+          .circle {
+            transform: scale(2) rotate(-45deg);
+
+            &::after {
+              opacity: 1;
+            }
           }
-        }
-        &::before {
-          content: "Saiba Mais!";
-          position: absolute;
-          top: 100%;
-          // -webkit-transform: translate3d(0, 0, 0);
-          transform: translateY(0);
-          // transform: translate3d(0, 0, 0);
-          color: #fb4566;
-          display: block;
+
+          .text-top {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+
+          .text-bottom {
+            transform: translateY(-100%);
+            opacity: 1;
+          }
         }
       }
     }
   }
+
   .third {
     display: flex;
     flex-direction: row;
@@ -165,41 +283,55 @@ html {
     align-content: center;
     justify-content: center;
     padding: 0 8%;
+
     .divisoria {
       border-bottom: 1px solid #f1dada1a;
       max-width: 350px;
       width: 100%;
     }
+
     .texto {
       text-align: center;
       width: 400px;
+
       h2 {
         font-family: "Mango Grotesque", sans-serif;
         font-size: 45px;
         font-weight: 400;
       }
+
       p {
         font-family: "Poppins", sans-serif;
       }
     }
   }
+
   .fourth {
     .section {
       position: relative;
-      height: 300vh;
+      height: 200vh;
+
       .motion {
-        position: sticky;
+        // position: sticky;
         top: 0;
         display: flex;
         height: screen;
         align-items: center;
         overflow: hidden;
+        height: 100vh;
+
         .motion-div {
           display: flex;
-          gap: 4px;
+          gap: 2rem;
+          width: max-content;
+        }
+
+        .cards {
+          flex: 0 0 auto;
         }
       }
     }
+
     .cards {
       position: relative;
       height: 250px;
@@ -209,23 +341,27 @@ html {
       flex-direction: row;
       align-items: center;
       align-content: center;
+
       .card {
         position: absolute;
         inset: 0;
         z-index: 0;
         transition: transform 0.3s ease-in-out;
       }
+
       .box {
         position: absolute;
         inset: 0;
         z-index: 10;
         display: grid;
         place-content: center;
+
         p {
           font-size: 50px;
           font-family: "Lora", serif;
         }
       }
+
       .circulo {
         position: relative;
         width: 20px;
@@ -240,9 +376,11 @@ html {
     }
   }
 }
+
 .trabalho {
   width: 77%;
   margin: 0 auto;
+
   .cards {
     width: 100%;
     display: flex;
@@ -250,6 +388,7 @@ html {
     justify-content: center;
     align-items: center;
     align-content: center;
+
     .card {
       width: 100%;
 
@@ -262,21 +401,47 @@ html {
       border-radius: 15px;
       text-align: justify;
       margin: 30px 0;
+
+      &.card2 {
+        border: 1px solid rgba(241, 218, 218, 0.1);
+      }
+
       h1 {
         font-family: "Mango Grotesque", sans-serif;
         font-size: 32px;
       }
+
       h2 {
         font-size: 28px;
         font-family: "Mango Grotesque", sans-serif;
         margin-top: 0;
       }
+
       h3 {
         font-family: "Lora", sans-serif;
         font-size: 14px;
       }
+
       p {
         font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+}
+
+.sobre-mim {
+  margin-top: 10%;
+  padding: 10px 10%;
+
+  .texto {
+    font-size: 28px;
+    line-height: 1.5em;
+    color: #f1dada;
+    text-align: justify;
+
+    p {
+      span {
+        font-weight: 700;
       }
     }
   }

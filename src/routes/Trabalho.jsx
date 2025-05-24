@@ -4,7 +4,7 @@ function Trabalho() {
   return (
     <div className="trabalho">
       <div className="cards">
-        <div className="card">
+        <div className="card card1">
           <h1>Desenvolvedor Front-End</h1>
           <h2>Yaslip</h2>
           <h3>Jun/24 - Atualmente</h3>
@@ -30,7 +30,7 @@ function Trabalho() {
           </p>
           <div className="techs"></div>
         </div>
-        <div className="card">
+        <div className="card card2">
           <h1>Desenvolvedor Front-End</h1>
           <h2>Freelancer</h2>
           <h3>Jul/23 - Maio/24</h3>

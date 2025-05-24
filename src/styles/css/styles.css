@@ -5,6 +5,81 @@ html {
   border: 1px solid #000;
 }
 
+* .botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* .botao .animated-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  position: relative;
+}
+* .botao .animated-link .circle {
+  width: 12px;
+  height: 12px;
+  background-color: #fb4566;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  flex-shrink: 0;
+}
+* .botao .animated-link .circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: url("../../assets/images/seta.svg") no-repeat center;
+  background-size: contain;
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+* .botao .animated-link .text-wrapper {
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+}
+* .botao .animated-link .text {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  display: block;
+}
+* .botao .animated-link .text-top {
+  color: #f1dada;
+  transform: translateY(0);
+  position: relative;
+  z-index: 1;
+}
+* .botao .animated-link .text-bottom {
+  color: #fb4566;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(0);
+  opacity: 0;
+}
+* .botao .animated-link:hover .circle {
+  transform: scale(2) rotate(-45deg);
+}
+* .botao .animated-link:hover .circle::after {
+  opacity: 1;
+}
+* .botao .animated-link:hover .text-top {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+* .botao .animated-link:hover .text-bottom {
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
 @keyframes pulse-animation {
   0% {
     transform: scale(1);
@@ -69,37 +144,39 @@ html {
 .home .second {
   margin-top: 10%;
   padding: 10px 10%;
-  height: 80vh;
+  height: 120vh;
 }
 .home .second .texto {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.5em;
   color: #f1dada;
+  text-align: justify;
 }
 .home .second .texto p span {
   font-weight: 700;
 }
 .home .second .botao {
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 }
-.home .second .botao .circle {
+.home .second .botao .animated-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
   position: relative;
+}
+.home .second .botao .animated-link .circle {
   width: 12px;
   height: 12px;
   background-color: #fb4566;
   border-radius: 50%;
-  margin-right: 20px;
+  position: relative;
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  overflow: hidden;
-  padding: 2px;
+  flex-shrink: 0;
 }
-.home .second .botao .circle ::after {
+.home .second .botao .animated-link .circle::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -109,43 +186,48 @@ html {
   background: url("../../assets/images/seta.svg") no-repeat center;
   background-size: contain;
   transform: translate(-50%, -50%) rotate(45deg);
-  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
-.home .second .botao .circle:hover {
-  transform: scale(2) rotate(-45deg);
-  background: url("../../assets/images/seta.svg") no-repeat center;
-  background-size: contain;
-  background-color: #fb4566;
-}
-.home .second .botao .circle:hover::after {
-  width: 6px;
-  height: 6px;
-}
-.home .second .botao a {
-  text-decoration: none;
-  color: #f1dada;
-  overflow: hidden;
+.home .second .botao .animated-link .text-wrapper {
   position: relative;
-  transition: all 0.2s ease-in-out;
-  height: auto;
-  padding: 1px 0;
+  height: 24px;
+  overflow: hidden;
 }
-.home .second .botao a:hover {
-  transform: translateY(-100%);
-  color: transparent;
-  overflow: visible;
+.home .second .botao .animated-link .text {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  display: block;
 }
-.home .second .botao a:hover::before {
-  top: 0;
-  transform: translateY(110%);
+.home .second .botao .animated-link .text-top {
+  color: #f1dada;
+  transform: translateY(0);
+  position: relative;
+  z-index: 1;
 }
-.home .second .botao a::before {
-  content: "Saiba Mais!";
+.home .second .botao .animated-link .text-bottom {
+  color: #fb4566;
   position: absolute;
   top: 100%;
+  left: 0;
   transform: translateY(0);
-  color: #fb4566;
-  display: block;
+  opacity: 0;
+}
+.home .second .botao .animated-link:hover .circle {
+  transform: scale(2) rotate(-45deg);
+}
+.home .second .botao .animated-link:hover .circle::after {
+  opacity: 1;
+}
+.home .second .botao .animated-link:hover .text-top {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.home .second .botao .animated-link:hover .text-bottom {
+  transform: translateY(-100%);
+  opacity: 1;
 }
 .home .third {
   display: flex;
@@ -174,19 +256,24 @@ html {
 }
 .home .fourth .section {
   position: relative;
-  height: 300vh;
+  height: 200vh;
 }
 .home .fourth .section .motion {
-  position: sticky;
   top: 0;
   display: flex;
   height: screen;
   align-items: center;
   overflow: hidden;
+  height: 100vh;
 }
 .home .fourth .section .motion .motion-div {
   display: flex;
-  gap: 4px;
+  gap: 2rem;
+  width: -moz-max-content;
+  width: max-content;
+}
+.home .fourth .section .motion .cards {
+  flex: 0 0 auto;
 }
 .home .fourth .cards {
   position: relative;
@@ -251,6 +338,9 @@ html {
   text-align: justify;
   margin: 30px 0;
 }
+.trabalho .cards .card.card2 {
+  border: 1px solid rgba(241, 218, 218, 0.1);
+}
 .trabalho .cards .card h1 {
   font-family: "Mango Grotesque", sans-serif;
   font-size: 32px;
@@ -266,4 +356,18 @@ html {
 }
 .trabalho .cards .card p {
   font-family: "Poppins", sans-serif;
+}
+
+.sobre-mim {
+  margin-top: 10%;
+  padding: 10px 10%;
+}
+.sobre-mim .texto {
+  font-size: 28px;
+  line-height: 1.5em;
+  color: #f1dada;
+  text-align: justify;
+}
+.sobre-mim .texto p span {
+  font-weight: 700;
 }

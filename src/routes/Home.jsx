@@ -5,6 +5,7 @@ import "../styles/scss/footer.scss";
 import { Link } from "react-router-dom";
 import Carrossel from "../components/Carrossel";
 import ScrollTriggerC from "../components/animations/ScrollTrigger";
+import Second from "../components/animations/Second";
 function Home() {
   return (
     <div className="home">
@@ -19,20 +20,39 @@ function Home() {
           <h1>Desenvolvedor Front-End</h1>
         </div>
       </div>
+      <Second />
       <div className="second">
         <div className="texto">
           <p>
-            Sou um Desenvolvedor Front-End com experiência comprovada desde
-            Junho de 2024. No meu dia a dia na empresa, utilizo principalmente
-            <span> JavaScript</span> e <span>PHP</span>. Mas anteriormente, já
-            estudei outras linguagens para me aperfeiçoar como profissional,
-            como por exemplo <span>TypeScript</span>.
+            Sou Desenvolvedor Front-End com foco na criação de interfaces
+            modernas, acessíveis e com alta performance. Trabalho com
+            <span> JavaScript</span>, <span>React</span>, <span>Vue</span>,{" "}
+            <span>TypeScript</span> e frameworks de estilização como
+            <span>TailwindCSS</span> e <span>SCSS</span>, sempre buscando
+            escrever um código limpo, reutilizável e escalável.
+          </p>
+          <p>
+            Tenho experiência na integração com <span>APIs RESTful</span>,
+            aplicação de boas práticas de acessibilidade (WCAG), otimização para{" "}
+            <span>Core Web Vitals</span> e uso de ferramentas como Google
+            Lighthouse, Search Console e Google Analytics para melhorar a
+            experiência do usuário e o desempenho das aplicações.
+          </p>
+          <p>
+            Valorizo a colaboração em times multidisciplinares, o uso de{" "}
+            <span>Git</span>
+            para versionamento e a adoção de testes automatizados com Jest para
+            garantir a qualidade e a estabilidade do código.
           </p>
         </div>
+
         <div className="botao">
-          <div className="circle"></div>
-          <Link to="/sobre" data-hover="Saiba Mais!">
-            Saiba Mais!
+          <Link to="/sobre" className="animated-link">
+            <div className="circle"></div>
+            <div className="text-wrapper">
+              <span className="text text-top">Saiba Mais!</span>
+              <span className="text text-bottom">Saiba Mais!</span>
+            </div>
           </Link>
         </div>
       </div>
@@ -44,7 +64,7 @@ function Home() {
         </div>
         <div className="divisoria"></div>
       </div>
-      <ScrollTriggerC />
+      {/* <ScrollTriggerC /> */}
       <div className="fourth">
         <Carrossel />
       </div>
