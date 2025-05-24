@@ -309,16 +309,15 @@ html {
   .fourth {
     .section {
       position: relative;
-      height: 200vh;
+      // height: 100vh;
 
       .motion {
         // position: sticky;
         top: 0;
         display: flex;
-        height: screen;
         align-items: center;
         overflow: hidden;
-        height: 100vh;
+        // height: 100vh;
 
         .motion-div {
           display: flex;

@@ -256,15 +256,12 @@ html {
 }
 .home .fourth .section {
   position: relative;
-  height: 200vh;
 }
 .home .fourth .section .motion {
   top: 0;
   display: flex;
-  height: screen;
   align-items: center;
   overflow: hidden;
-  height: 100vh;
 }
 .home .fourth .section .motion .motion-div {
   display: flex;

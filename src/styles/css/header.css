@@ -20,7 +20,7 @@ header .menu {
   background-color: #0e090d;
 }
 header .menu #nome {
-  font-size: 30px;
+  font-size: 34px;
   color: #f1dada;
   text-transform: uppercase;
   font-weight: 700;
@@ -37,13 +37,13 @@ header .menu .nav .nav-item .animated-link {
   align-items: center;
   text-decoration: none;
   color: #f1dada;
-  font-size: 24px;
+  font-size: 32px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
 header .menu .nav .nav-item .animated-link .text-wrapper {
   position: relative;
-  height: 24px;
+  height: 30px;
   overflow: hidden;
 }
 header .menu .nav .nav-item .animated-link .text-wrapper .text {
