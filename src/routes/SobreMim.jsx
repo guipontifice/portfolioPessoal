@@ -8,74 +8,113 @@ function SobreMim() {
   return (
     <>
       <div className="sobre-mim">
-        <div className="texto">
-          <h1>Olá</h1>
-          <p>
-            Me chamo Guilherme Pontifice e sou Desenvolvedor Front-End com forte
-            paixão por criar experiências digitais que unam performance,
-            acessibilidade e estética. Minha jornada com tecnologia começou
-            cedo, ainda no ensino fundamental, quando tive minhas primeiras
-            aulas de programação. Foi ali que percebi não só uma afinidade
-            natural com lógica, mas também um entusiasmo genuíno por construir
-            coisas com código — o tipo de entusiasmo que transforma curiosidade
-            em propósito.
-          </p>
-          <p>
-            No ensino médio, aprofundei esse interesse ao cursar Técnico em
-            Informática. Durante esse período, desenvolvi uma base sólida em
-            fundamentos da computação, redes, manutenção e desenvolvimento web.
-            Ainda assim, após a conclusão do curso, acabei trilhando outros
-            caminhos por um tempo. No entanto, a tecnologia nunca deixou de me
-            atrair — e foi essa paixão que me fez retornar de forma definitiva à
-            área, agora com muito mais foco e maturidade.
-          </p>
-          <p>
-            Em 2024, iniciei minha graduação em Análise e Desenvolvimento de
-            Sistemas, com o objetivo de consolidar meus conhecimentos e me
-            preparar para desafios cada vez maiores. Desde então, venho me
-            dedicando intensamente à prática profissional e ao aprimoramento
-            contínuo, buscando sempre alinhar teoria, técnica e visão de
-            produto.
-          </p>
-          <p>
-            Atualmente, atuo como Desenvolvedor Front-End na Yaslip, onde há
-            mais de um ano participo ativamente da criação, otimização e
-            manutenção de interfaces web para diversos projetos no setor de
-            marketing digital. Meu dia a dia envolve tecnologias como
-            JavaScript, TypeScript, Vue, React, Angular e Node.js, além do uso
-            de ferramentas modernas para SEO (como Google Lighthouse, Search
-            Console e Analytics), testes automatizados (Jest), versionamento com
-            Git e integração com APIs.
-          </p>
-          <p>
-            Entre meus principais focos estão a performance de carregamento,
-            acessibilidade conforme diretrizes WCAG, e a construção de código
-            limpo e reutilizável. Já tive a oportunidade de otimizar páginas que
-            saltaram de 30–50 para 90–100 em métricas do Core Web Vitals,
-            resultando em melhor ranqueamento e experiência do usuário.
-          </p>
-          <p>
-            Sou uma pessoa comprometida com entregas bem feitas, colaborativa no
-            trabalho em equipe, e que acredita no poder da tecnologia como
-            ferramenta para resolver problemas reais. Tenho facilidade em me
-            comunicar com áreas como design, produto e marketing, e encaro cada
-            projeto como uma chance de aprender algo novo e contribuir com
-            soluções de impacto.
-          </p>
-          <p>
-            Se você busca alguém que alia base técnica, vontade de crescer e um
-            olhar genuíno por qualidade e usabilidade, será um prazer trocarmos
-            uma ideia!
-          </p>
-        </div>
-        <div className="botao">
-          <Link to="/sobre" className="animated-link">
-            <div className="circle"></div>
-            <div className="text-wrapper">
-              <span className="text text-top">Saiba Mais!</span>
-              <span className="text text-bottom">Saiba Mais!</span>
+        <div className="section-1">
+          <div className="imagem"></div>
+          <div className="texto">
+            <h1>
+              Crio soluções com algoritmos, estrutura de dados e código limpo
+            </h1>
+            <p>
+              Sou Guilherme Pontifice, Desenvolvedor Front-End com paixão por
+              criar experiências digitais acessíveis, performáticas e
+              visualmente bem resolvidas. Minha relação com a tecnologia começou
+              cedo, ainda no ensino fundamental, quando tive meu primeiro
+              contato com programação. No ensino médio, aprofundei esse
+              interesse ao cursar Técnico em Informática, e embora tenha seguido
+              outros caminhos por um tempo, foi essa paixão duradoura que me
+              trouxe de volta à área — agora com muito mais foco, maturidade e
+              propósito.
+            </p>
+            <p>
+              Atualmente curso Análise e Desenvolvimento de Sistemas e atuo como
+              Desenvolvedor Front-End, contribuindo em projetos diversos no
+              setor de marketing digital. Trabalho com tecnologias como
+              <span>JavaScript</span>, <span>TypeScript</span>,{" "}
+              <span>React</span> e <span>NextJS</span>, sempre com atenção
+              especial a performance, acessibilidade (WCAG), SEO e boas práticas
+              de código. Tenho experiência com testes em <span>Jest</span>,
+              integração com APIs e otimizações que impactam diretamente a
+              experiência do usuário e os Core Web Vitals. Sou colaborativo,
+              orientado a entregas de qualidade, e acredito que código bem
+              estruturado, com base sólida em algoritmos e lógica, é o que
+              transforma ideias em soluções reais.
+            </p>
+            <div className="botao">
+              <Link to="/sobre" className="animated-link">
+                <div className="circle"></div>
+                <div className="text-wrapper">
+                  <span className="text text-top">Saiba Mais!</span>
+                  <span className="text text-bottom">Saiba Mais!</span>
+                </div>
+              </Link>
             </div>
-          </Link>
+          </div>
+        </div>
+        <div className="divisoria">
+          <h2>Sobre</h2>
+          <div className="linha"></div>
+        </div>
+        <div className="habilidades">
+          <h2>Habilidades</h2>
+          <div className="boxes">
+            <div className="box box1">
+              <h2>Desenvolvimento Frontend</h2>
+              <ul>
+                <li>React & Vue</li>
+                <li>TypeScript & JavaScript</li>
+                <li>Consumo de APIs REST </li>
+                <li>Testes Unitários com Jest</li>
+              </ul>
+            </div>
+            <div className="box box2">
+              <h2>Performance & Acessibilidade</h2>
+              <ul>
+                <li>Core Web Vitals (Lighthouse)</li>
+                <li>Boas práticas WCAG</li>
+                <li>SEO Técnico (Search Console)</li>
+                <li>UX/UI</li>
+              </ul>
+            </div>
+            <div className="box box3">
+              <h2>Lógica e Estrutura de Dados</h2>
+              <ul>
+                <li>Algoritmos otimizados</li>
+                <li>Estruturas clássicas (listas, pilhas, árvores)</li>
+                <li>Resolução de problemas</li>
+                <li>Organização e legibilidade do código</li>
+              </ul>
+            </div>
+            <div className="box box4">
+              <h2>Colaboração e Produto</h2>
+              <ul>
+                <li>Integração com Design e Marketing</li>
+                <li>Documentação e Git</li>
+                <li>Metodologias Ágeis (Scrum)</li>
+                <li>Foco em entregas com valor real</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="ferramentas">
+          <div className="divisoria">
+            <h2>Tecnologias</h2>
+            <div className="linha"></div>
+          </div>
+          <div className="texto">
+            <h2>Ferramentas</h2>
+            <div className="linguagens">
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>NextJS</span>
+              <span>GIT</span>
+              <span>Jest</span>
+              <span>NodeJS</span>
+              <span>Figma</span>
+              <span>SCSS</span>
+              <span>TailwindCSS</span>
+            </div>
+          </div>
         </div>
       </div>
     </>

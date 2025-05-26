@@ -43,7 +43,7 @@ header .menu .nav .nav-item .animated-link {
 }
 header .menu .nav .nav-item .animated-link .text-wrapper {
   position: relative;
-  height: 30px;
+  height: 32px;
   overflow: hidden;
 }
 header .menu .nav .nav-item .animated-link .text-wrapper .text {
@@ -64,7 +64,7 @@ header .menu .nav .nav-item .animated-link .circle {
   height: 4px;
   background: #fb4566;
   border-radius: 50%;
-  margin-top: 6px;
+  margin-top: 4px;
   transition: all 0.3s ease-in-out;
 }
 header .menu .nav .nav-item .animated-link:hover .text-top {
@@ -72,4 +72,7 @@ header .menu .nav .nav-item .animated-link:hover .text-top {
 }
 header .menu .nav .nav-item .animated-link:hover .text-bottom {
   transform: translateY(0%);
+}
+header .menu .nav .nav-item .animated-link:hover .circle {
+  transform: scale(1.5);
 }

@@ -48,7 +48,7 @@ header {
 
           .text-wrapper {
             position: relative;
-            height: 30px;
+            height: 32px;
             overflow: hidden;
 
             .text {
@@ -73,7 +73,7 @@ header {
             height: 4px;
             background: #fb4566;
             border-radius: 50%;
-            margin-top: 6px;
+            margin-top: 4px;
             transition: all 0.3s ease-in-out;
             
           }
@@ -86,10 +86,9 @@ header {
             transform: translateY(0%);
           }
 
-          // ❌ Remover este bloco se ele existir:
-          // &:hover .circle {
-          //   transform: scale(1.5);
-          // }
+          &:hover .circle {
+            transform: scale(1.5);
+          }
         }
       }
     }
