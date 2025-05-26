@@ -25,6 +25,35 @@ header .menu #nome {
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+header .menu #nome:hover .text-top {
+  transform: translateY(-100%);
+}
+header .menu #nome:hover .text-bottom {
+  transform: translateY(0%);
+}
+header .menu #nome .text-wrapper {
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+}
+header .menu #nome .text-wrapper .text {
+  display: block;
+  transition: transform 0.4s;
+}
+header .menu #nome .text-wrapper .text-top {
+  transform: translateY(0%);
+}
+header .menu #nome .text-wrapper .text-bottom {
+  color: #fb4566;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
 }
 header .menu .nav {
   display: flex;
@@ -37,13 +66,13 @@ header .menu .nav .nav-item .animated-link {
   align-items: center;
   text-decoration: none;
   color: #f1dada;
-  font-size: 32px;
+  font-size: 28px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
 header .menu .nav .nav-item .animated-link .text-wrapper {
   position: relative;
-  height: 32px;
+  height: 30px;
   overflow: hidden;
 }
 header .menu .nav .nav-item .animated-link .text-wrapper .text {

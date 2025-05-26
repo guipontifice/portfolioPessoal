@@ -3,8 +3,16 @@ import "../styles/fonts.css";
 import "../styles/scss/styles.scss";
 import "../styles/scss/footer.scss";
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 function SobreMim() {
+  const element = (
+    <FontAwesomeIcon
+      icon={faArrowRight}
+      style={{ color: "#fb4566", margin: "0 10px 0 0" }}
+    />
+  );
+
   return (
     <>
       <div className="sobre-mim">
@@ -15,15 +23,14 @@ function SobreMim() {
               Crio soluções com algoritmos, estrutura de dados e código limpo
             </h1>
             <p>
-              Sou Guilherme Pontifice, Desenvolvedor Front-End com paixão por
-              criar experiências digitais acessíveis, performáticas e
-              visualmente bem resolvidas. Minha relação com a tecnologia começou
-              cedo, ainda no ensino fundamental, quando tive meu primeiro
-              contato com programação. No ensino médio, aprofundei esse
-              interesse ao cursar Técnico em Informática, e embora tenha seguido
-              outros caminhos por um tempo, foi essa paixão duradoura que me
-              trouxe de volta à área — agora com muito mais foco, maturidade e
-              propósito.
+              Me chamo Guilherme, Desenvolvedor Front-End com paixão por criar
+              experiências digitais acessíveis, performáticas e visualmente bem
+              resolvidas. Minha relação com a tecnologia começou cedo, ainda no
+              ensino fundamental, quando tive meu primeiro contato com
+              programação. No ensino médio, aprofundei esse interesse ao cursar
+              Técnico em Informática, e embora tenha seguido outros caminhos por
+              um tempo, foi essa paixão duradoura que me trouxe de volta à área
+              — agora com muito mais foco e maturidade .
             </p>
             <p>
               Atualmente curso Análise e Desenvolvimento de Sistemas e atuo como
@@ -97,7 +104,7 @@ function SobreMim() {
         </div>
         <div className="ferramentas">
           <div className="divisoria">
-            <h2>Tecnologias</h2>
+            <h2>Sobre</h2>
             <div className="linha"></div>
           </div>
           <div className="texto">
@@ -113,6 +120,43 @@ function SobreMim() {
               <span>Figma</span>
               <span>SCSS</span>
               <span>TailwindCSS</span>
+            </div>
+          </div>
+        </div>
+        <div className="experiencia">
+          <div className="divisoria">
+            <h2>Sobre</h2>
+            <div className="linha"></div>
+          </div>
+          <div className="texto">
+            <h2>Experiência</h2>
+            <div className="trabalhos">
+              <div className="direita">
+                <div className="linha">
+                  <div className="titulo">
+                    <h3>Desenvolvedor Frontend</h3>
+                    <span>@Yaslip</span>
+                  </div>
+                  <div className="data">
+                    <span>Jun.2024</span>
+                    {element}
+                    <span>Atualmente</span>
+                  </div>
+                </div>
+
+                <div className="linha">
+                  <div className="titulo">
+                    <h3>Desenvolvedor Frontend</h3>
+                    <span>@Freelancer</span>
+                  </div>
+                  <div className="data">
+                    <span>Mai.2023</span>
+                    {element}
+                    <span>&rarr;</span>
+                    <span>Jun.2024</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

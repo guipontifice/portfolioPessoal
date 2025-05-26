@@ -29,8 +29,11 @@ function Header() {
   return (
     <header className={`header ${showHeader ? "show" : "hide"}`}>
       <nav className="menu">
-        <Link to="/" id="nome">
-          Guilherme Pontifice
+        <Link to="/" id="nome" className="animated-link nome-link">
+          <div className="text-wrapper">
+            <span className="text text-top">Guilherme Pontifice</span>
+            <span className="text text-bottom">Guilherme Pontifice</span>
+          </div>
         </Link>
         <ul className="nav">
           {menuItems.map((item) => (

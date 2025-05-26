@@ -165,80 +165,6 @@ html h1 {
 .home .second .texto p span {
   font-weight: 700;
 }
-.home .second .botao {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home .second .botao .animated-link {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  text-decoration: none;
-  position: relative;
-}
-.home .second .botao .animated-link .circle {
-  width: 12px;
-  height: 12px;
-  background-color: #fb4566;
-  border-radius: 50%;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-  flex-shrink: 0;
-}
-.home .second .botao .animated-link .circle::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  background: url("../../assets/images/seta.svg") no-repeat center;
-  background-size: contain;
-  transform: translate(-50%, -50%) rotate(45deg);
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-.home .second .botao .animated-link .text-wrapper {
-  position: relative;
-  height: 24px;
-  overflow: hidden;
-}
-.home .second .botao .animated-link .text {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  display: block;
-}
-.home .second .botao .animated-link .text-top {
-  color: #f1dada;
-  transform: translateY(0);
-  position: relative;
-  z-index: 1;
-}
-.home .second .botao .animated-link .text-bottom {
-  color: #fb4566;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  transform: translateY(0);
-  opacity: 0;
-}
-.home .second .botao .animated-link:hover .circle {
-  transform: scale(2) rotate(-45deg);
-}
-.home .second .botao .animated-link:hover .circle::after {
-  opacity: 1;
-}
-.home .second .botao .animated-link:hover .text-top {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-.home .second .botao .animated-link:hover .text-bottom {
-  transform: translateY(-100%);
-  opacity: 1;
-}
 .home .third {
   display: flex;
   flex-direction: row;
@@ -390,6 +316,11 @@ html h1 {
   color: #f1dada;
   text-align: justify;
 }
+.sobre-mim .section-1 .texto h1 {
+  width: 70%;
+  text-align: left;
+  font-weight: 400;
+}
 .sobre-mim .section-1 .texto p span {
   font-weight: 700;
 }
@@ -478,4 +409,51 @@ html h1 {
   margin: 0 1rem;
   border-radius: 50%;
   background: #fb4566;
+}
+.sobre-mim .experiencia {
+  padding-bottom: 10rem;
+}
+.sobre-mim .experiencia .trabalhos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-left: auto;
+}
+.sobre-mim .experiencia .trabalhos .direita {
+  display: flex;
+  flex-direction: column;
+}
+.sobre-mim .experiencia .trabalhos .direita .linha {
+  padding: 0 0.5rem;
+}
+.sobre-mim .experiencia .trabalhos .direita .linha .titulo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: #f1dada;
+}
+.sobre-mim .experiencia .trabalhos .direita .linha .titulo h3 {
+  font-family: "Poppins", serif;
+  font-size: 28px;
+  color: #f1dada;
+  font-weight: 500;
+}
+.sobre-mim .experiencia .trabalhos .direita .linha .titulo span {
+  font-family: "Lora", sans-serif;
+  font-weight: 200;
+  margin-left: 10px;
+  color: rgba(241, 218, 218, 0.8);
+}
+.sobre-mim .experiencia .trabalhos .direita .linha .data {
+  color: rgba(241, 218, 218, 0.8);
+}
+.sobre-mim .experiencia .trabalhos .direita .linha .data span {
+  font-family: "Poppins'", sans-serif;
+  margin-right: 15px;
+}
+.sobre-mim .experiencia .trabalhos .direita .linha .data i {
+  border: 1px solid #000;
+  font-size: 12px;
+  font-weight: 400;
 }

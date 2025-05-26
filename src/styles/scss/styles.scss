@@ -2,11 +2,13 @@ html {
   background-color: #0e090d;
   color: white;
   font-family: "Poppins", sans-serif;
+
   // border: 1px solid #000;
   ::selection {
     background-color: #fb4566;
     color: #0e090d;
   }
+
   h1 {
     line-height: 1;
   }
@@ -194,93 +196,93 @@ html {
       }
     }
 
-    .botao {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    // .botao {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
 
-      .animated-link {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        text-decoration: none;
-        position: relative;
+    //   .animated-link {
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 16px;
+    //     text-decoration: none;
+    //     position: relative;
 
-        .circle {
-          width: 12px;
-          height: 12px;
-          background-color: #fb4566;
-          border-radius: 50%;
-          position: relative;
-          transition: all 0.3s ease-in-out;
-          flex-shrink: 0;
+    //     .circle {
+    //       width: 12px;
+    //       height: 12px;
+    //       background-color: #fb4566;
+    //       border-radius: 50%;
+    //       position: relative;
+    //       transition: all 0.3s ease-in-out;
+    //       flex-shrink: 0;
 
-          &::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 10px;
-            height: 10px;
-            background: url("../../assets/images/seta.svg") no-repeat center;
-            background-size: contain;
-            transform: translate(-50%, -50%) rotate(45deg);
-            opacity: 0;
-            transition: all 0.3s ease;
-          }
-        }
+    //       &::after {
+    //         content: "";
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         width: 10px;
+    //         height: 10px;
+    //         background: url("../../assets/images/seta.svg") no-repeat center;
+    //         background-size: contain;
+    //         transform: translate(-50%, -50%) rotate(45deg);
+    //         opacity: 0;
+    //         transition: all 0.3s ease;
+    //       }
+    //     }
 
-        .text-wrapper {
-          position: relative;
-          height: 24px;
-          overflow: hidden;
-        }
+    //     .text-wrapper {
+    //       position: relative;
+    //       height: 24px;
+    //       overflow: hidden;
+    //     }
 
-        .text {
-          font-family: "Poppins", sans-serif;
-          font-size: 18px;
-          line-height: 24px;
-          transition: transform 0.4s ease, opacity 0.4s ease;
-          display: block;
-        }
+    //     .text {
+    //       font-family: "Poppins", sans-serif;
+    //       font-size: 18px;
+    //       line-height: 24px;
+    //       transition: transform 0.4s ease, opacity 0.4s ease;
+    //       display: block;
+    //     }
 
-        .text-top {
-          color: #f1dada;
-          transform: translateY(0);
-          position: relative;
-          z-index: 1;
-        }
+    //     .text-top {
+    //       color: #f1dada;
+    //       transform: translateY(0);
+    //       position: relative;
+    //       z-index: 1;
+    //     }
 
-        .text-bottom {
-          color: #fb4566;
-          position: absolute;
-          top: 100%; // Fora da view
-          left: 0;
-          transform: translateY(0);
-          opacity: 0;
-        }
+    //     .text-bottom {
+    //       color: #fb4566;
+    //       position: absolute;
+    //       top: 100%; // Fora da view
+    //       left: 0;
+    //       transform: translateY(0);
+    //       opacity: 0;
+    //     }
 
-        &:hover {
-          .circle {
-            transform: scale(2) rotate(-45deg);
+    //     &:hover {
+    //       .circle {
+    //         transform: scale(2) rotate(-45deg);
 
-            &::after {
-              opacity: 1;
-            }
-          }
+    //         &::after {
+    //           opacity: 1;
+    //         }
+    //       }
 
-          .text-top {
-            transform: translateY(-100%);
-            opacity: 0;
-          }
+    //       .text-top {
+    //         transform: translateY(-100%);
+    //         opacity: 0;
+    //       }
 
-          .text-bottom {
-            transform: translateY(-100%);
-            opacity: 1;
-          }
-        }
-      }
-    }
+    //       .text-bottom {
+    //         transform: translateY(-100%);
+    //         opacity: 1;
+    //       }
+    //     }
+    //   }
+    // }
   }
 
   .third {
@@ -445,10 +447,12 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     .imagem {
       border: 1px solid #000;
       width: 25%;
     }
+
     .texto {
       display: flex;
       flex-direction: column;
@@ -459,20 +463,29 @@ html {
       color: #f1dada;
       text-align: justify;
 
+      h1 {
+        width: 70%;
+        text-align: left;
+        font-weight: 400;
+      }
+
       p {
         span {
           font-weight: 700;
         }
       }
+
       .botao {
         margin-right: auto;
       }
     }
   }
+
   .divisoria {
     display: flex;
     font-family: "Mango Grotesque ExtLt", sans-serif;
     font-weight: 200;
+
     h2 {
       font-weight: 200;
       text-align: left;
@@ -480,18 +493,22 @@ html {
       font-family: "Poppins", sans-serif;
       font-size: 18px;
     }
+
     .linha {
       border-bottom: 1px solid rgba(241, 218, 218, 0.6);
       width: 100%;
       margin: 0 0 25px 12px;
     }
   }
+
   .habilidades {
     display: flex;
     flex-direction: column;
+
     h2 {
       font-family: "Poppins", sans-serif;
     }
+
     .boxes {
       display: grid;
       grid-template-areas:
@@ -502,14 +519,18 @@ html {
       width: 70%;
       margin-left: auto;
       gap: 0;
+
       .box {
         width: 100%;
+
         h2 {
           font-family: "Lora", sans-serif;
         }
+
         ul {
           list-style-type: none;
           padding: 0;
+
           li {
             margin-left: 5px;
             padding: 0;
@@ -517,21 +538,26 @@ html {
             color: rgba(241, 218, 218, 0.8);
           }
         }
+
         &.box1 {
           grid-area: a;
         }
+
         &.box2 {
           grid-area: b;
         }
+
         &.box3 {
           grid-area: c;
         }
+
         &.box4 {
           grid-area: d;
         }
       }
     }
   }
+
   .ferramentas {
     .texto {
       .linguagens {
@@ -540,12 +566,14 @@ html {
         flex-wrap: wrap;
         width: 70%;
         margin-left: auto;
+
         span {
           display: flex;
           margin: 0 5px;
           font-size: 28px;
           font-family: "Poppins", sans-serif;
           line-height: 2.5;
+
           &::after {
             content: "";
             width: 0.5rem;
@@ -555,6 +583,65 @@ html {
             margin: 0 1rem;
             border-radius: 50%;
             background: #fb4566;
+          }
+        }
+      }
+    }
+  }
+
+  .experiencia {
+    padding-bottom: 10rem;
+
+    .trabalhos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 70%;
+      margin-left: auto;
+
+      .direita {
+        display: flex;
+        flex-direction: column;
+
+        .linha {
+          padding: 0 0.5rem;
+          // border: 1px solid #000;
+
+          .titulo {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            color: #f1dada;
+
+            h3 {
+              font-family: 'Poppins', serif;
+              font-size: 28px;
+              color: #f1dada;
+              font-weight: 500;
+            }
+
+            span {
+              font-family: 'Lora', sans-serif;
+              font-weight: 200;
+              margin-left: 10px;
+              color: #f1dadacc;
+            }
+          }
+
+          .data {
+            color: #f1dadacc;
+
+            span {
+              font-family: "Poppins'", sans-serif;
+              margin-right: 15px;
+
+            }
+
+            i {
+              border: 1px solid #000;
+              font-size: 12px;
+              font-weight: 400;
+            }
           }
         }
       }
