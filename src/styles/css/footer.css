@@ -21,6 +21,11 @@
   font-size: 32px;
   transition: 0.3s all ease-in-out;
 }
+@media (max-width: 768px) {
+  .footer .caixa .texto a {
+    font-size: 24px;
+  }
+}
 .footer .caixa .texto a:hover {
   color: #fb4566;
 }
