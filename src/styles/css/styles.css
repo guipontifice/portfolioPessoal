@@ -89,6 +89,17 @@ html h1 {
   transform: translateY(-100%);
   opacity: 1;
 }
+* .transition-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fb4566;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  transform: translateY(100%);
+  pointer-events: none;
+}
 
 @keyframes pulse-animation {
   0% {

@@ -102,6 +102,18 @@ html {
       }
     }
   }
+
+  .transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fb4566;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    transform: translateY(100%);
+    pointer-events: none;
+  }
 }
 
 @keyframes pulse-animation {
@@ -469,7 +481,7 @@ html {
       text-align: justify;
 
       @media (max-width: 840px) {
-        margin: 0 auto 0 0
+        margin: 0 auto 0 0;
       }
 
       h1 {
@@ -589,7 +601,7 @@ html {
         margin-left: auto;
 
         @media (max-width: 840px) {
-          margin: 0 auto 0 0
+          margin: 0 auto 0 0;
         }
 
         span {
@@ -625,7 +637,7 @@ html {
       margin-left: auto;
 
       @media (max-width: 840px) {
-        margin: 0 auto 0 0
+        margin: 0 auto 0 0;
       }
 
       .direita {
@@ -643,14 +655,14 @@ html {
             color: #f1dada;
 
             h3 {
-              font-family: 'Poppins', serif;
+              font-family: "Poppins", serif;
               font-size: 28px;
               color: #f1dada;
               font-weight: 500;
             }
 
             span {
-              font-family: 'Lora', sans-serif;
+              font-family: "Lora", sans-serif;
               font-weight: 200;
               margin-left: 10px;
               color: #f1dadacc;
@@ -664,7 +676,6 @@ html {
             span {
               font-family: "Poppins'", sans-serif;
               margin-right: 15px;
-
             }
 
             i {
