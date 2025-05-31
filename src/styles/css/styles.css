@@ -39,10 +39,10 @@ html h1 {
 * .botao .animated-link .circle::after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
+  top: 6px;
+  left: 6px;
+  width: 6px;
+  height: 6px;
   background: url("../../assets/images/seta.svg") no-repeat center;
   background-size: contain;
   transform: translate(-50%, -50%) rotate(45deg);
@@ -76,7 +76,7 @@ html h1 {
   opacity: 0;
 }
 * .botao .animated-link:hover .circle {
-  transform: scale(2) rotate(-45deg);
+  transform: scale(2) rotate(-100deg);
 }
 * .botao .animated-link:hover .circle::after {
   opacity: 1;

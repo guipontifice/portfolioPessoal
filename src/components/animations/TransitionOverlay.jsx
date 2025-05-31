@@ -45,7 +45,7 @@ export default function TransitionOverlay({ onMidTransition }) {
         pointerEvents: "none",
       }}
     >
-      {/* SVG decorativo da onda */}
+        
       <svg
         ref={waveRef}
         viewBox="0 0 1440 100"
