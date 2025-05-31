@@ -103,8 +103,8 @@ const cards = [
 ];
 
 const cards2 = [
-  { title: "SEO", id: 1 },
-  { title: "UX/UI", id: 12 },
-  { title: "Acessibilidade", id: 3 },
-  { title: "Documentação", id: 4 },
+  { title: "Jest", id: 1 },
+  { title: "UX/UI", id: 2 },
+  { title: "GIT", id: 3 },
+  { title: "AWS", id: 4 },
 ];

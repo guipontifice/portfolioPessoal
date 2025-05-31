@@ -16,7 +16,6 @@ const Second = () => {
         scrollTrigger: {
           trigger: ".second",
           start: "top 70%",
-          markers: true,
         },
       });
 

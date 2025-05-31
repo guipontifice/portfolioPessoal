@@ -153,7 +153,7 @@ function SobreMim() {
                   <div className="data">
                     <span>Mai.2023</span>
                     {element}
-                    <span>&rarr;</span>
+                    {/* <span>&rarr;</span> */}
                     <span>Jun.2024</span>
                   </div>
                 </div>
