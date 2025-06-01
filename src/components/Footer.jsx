@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const data = new Date();
+  const ano = data.getFullYear();
+
   return (
     <div className="footer">
       <div className="caixa">
@@ -34,7 +37,7 @@ function Footer() {
         </div>
       </div>
       <div className="bottomRowFooter">
-        <p>&#169; 2024 Guilherme Pontifice</p>
+        <p>{`&#169; ${ano} Guilherme Pontifice`}</p>
         <p id="disponivel">Em busca de uma nova oportunidade</p>
         <p>Feito por Guilherme Pontifice</p>
       </div>

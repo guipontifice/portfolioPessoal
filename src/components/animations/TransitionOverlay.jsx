@@ -1,40 +1,47 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-export default function TransitionOverlay({ onMidTransition }) {
+export default function TransitionOverlay({ onCompleteTransition }) {
   const overlayRef = useRef();
-  const waveRef = useRef();
+  const waveTopRef = useRef();
+  const waveBottomRef = useRef();
 
   useEffect(() => {
-    const tl = gsap.timeline({
-      onComplete: () => {
-        if (onMidTransition) onMidTransition();
-      },
-    });
+    const tl = gsap.timeline();
+
+    gsap.set(overlayRef.current, { y: "100%" });
+    gsap.set(waveTopRef.current, { y: -50 });
+    gsap.set(waveBottomRef.current, { y: 50 });
 
     tl.to(overlayRef.current, {
       y: 0,
       duration: 0.6,
       ease: "power2.inOut",
-    });
-
-    // Animação leve na onda
-    gsap.fromTo(
-      waveRef.current,
-      { y: 50 },
+    })
+    .to(
+      [waveTopRef.current, waveBottomRef.current],
       {
         y: 0,
-        duration: 1,
+        duration: 0.8,
         ease: "power2.out",
-      }
-    );
-  }, [onMidTransition]);
+      },
+      "<"
+    )
+    .to({}, { duration: 0.2 }) // pequena pausa visual
+    .to(overlayRef.current, {
+      y: "-100%",
+      duration: 0.6,
+      ease: "power2.inOut",
+      onComplete: () => {
+        if (onCompleteTransition) onCompleteTransition(); // aqui você navega
+      },
+    });
+  }, [onCompleteTransition]);
 
   return (
     <div
       ref={overlayRef}
       style={{
-        transform: "translateY(100%)",
         position: "fixed",
         top: 0,
         left: 0,
@@ -45,11 +52,35 @@ export default function TransitionOverlay({ onMidTransition }) {
         pointerEvents: "none",
       }}
     >
-        
+      {/* Onda superior */}
       <svg
-        ref={waveRef}
+        ref={waveTopRef}
         viewBox="0 0 1440 100"
         preserveAspectRatio="none"
+        aria-hidden="true"
+        role="presentation"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "50px",
+          transform: "rotate(180deg)", // inverte a onda
+        }}
+      >
+        <path
+          d="M0,40 C360,120 1080,0 1440,80 L1440,100 L0,100 Z"
+          fill="#0b050a"
+        />
+      </svg>
+
+      {/* Onda inferior */}
+      <svg
+        ref={waveBottomRef}
+        viewBox="0 0 1440 100"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+        role="presentation"
         style={{
           position: "absolute",
           bottom: 0,
