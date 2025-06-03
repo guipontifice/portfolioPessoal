@@ -7,29 +7,26 @@ gsap.registerPlugin(ScrollTrigger);
 const Second = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(".second .texto p", {
-        y: 30,
-        opacity: 0,
-        stagger: 0.25,
-        duration: 0.5,
-        ease: "power2.out",
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".second",
-          start: "top 70%",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+        defaults: {
+          ease: "power3.out",
+          duration: 0.6,
         },
       });
 
-      gsap.from(".second .botao", {
+      tl.from(".second .texto p", {
+        y: 40,
+        opacity: 0,
+        stagger: 0.2,
+      }).from(".second .botao", {
         y: 30,
         opacity: 0,
-        duration: 0.8,
-        ease: "power2.out",
-        delay: 0.5,
-        scrollTrigger: {
-          trigger: ".second",
-          start: "top 70%",
-        },
-      });
+      }, "-=0.3"); // começa antes do fim da última linha
     });
 
     return () => ctx.revert();
