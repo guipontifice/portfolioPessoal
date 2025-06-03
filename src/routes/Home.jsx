@@ -39,7 +39,7 @@ function Home() {
             experiência do usuário e o desempenho das aplicações.
           </p>
           <p>
-            Valorizo a colaboração em times multidisciplinares, o uso de{" "}
+            Valorizo a colaboração em times multidisciplinares, o uso de{"  "}
             <span>Git</span>
             para versionamento e a adoção de testes automatizados com Jest para
             garantir a qualidade e a estabilidade do código.

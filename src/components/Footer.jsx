@@ -37,7 +37,7 @@ function Footer() {
         </div>
       </div>
       <div className="bottomRowFooter">
-        <p>{`&#169; ${ano} Guilherme Pontifice`}</p>
+        <p>&copy;{` ${ano} Guilherme Pontifice`}</p>
         <p id="disponivel">Em busca de uma nova oportunidade</p>
         <p>Feito por Guilherme Pontifice</p>
       </div>
