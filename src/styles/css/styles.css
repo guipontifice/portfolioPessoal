@@ -197,6 +197,11 @@ html h1 {
   text-align: center;
   width: 400px;
 }
+@media (max-width: 768px) {
+  .home .third .texto {
+    width: 100%;
+  }
+}
 .home .third .texto h2 {
   font-family: "Mango Grotesque", sans-serif;
   font-size: 45px;

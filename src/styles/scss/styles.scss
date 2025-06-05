@@ -200,7 +200,6 @@ html {
     padding: 10px 10%;
     // height: 120vh;
 
-
     .texto {
       font-size: 28px;
       line-height: 1.5em;
@@ -320,7 +319,9 @@ html {
     .texto {
       text-align: center;
       width: 400px;
-
+      @media (max-width: 768px) {
+        width: 100%;
+      }
       h2 {
         font-family: "Mango Grotesque", sans-serif;
         font-size: 45px;
