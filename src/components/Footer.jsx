@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 function Footer() {
   const data = new Date();
   const ano = data.getFullYear();
+
 
   return (
     <div className="footer">
@@ -24,6 +26,7 @@ function Footer() {
               </Link>
             </div>
 
+
             <div className="botao">
               <Link to="/sobre" className="animated-link">
                 <div className="circle"></div>
@@ -37,12 +40,13 @@ function Footer() {
         </div>
       </div>
       <div className="bottomRowFooter">
-        <p>&copy;{` ${ano} Guilherme`}</p>
+        <p>&copy;{` ${ano} Direitos Reservados`}</p>
         <p id="disponivel">Em busca de uma nova oportunidade</p>
         <p>Feito por Guilherme</p>
       </div>
     </div>
   );
 }
+
 
 export default Footer;
